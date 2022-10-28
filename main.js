@@ -29,10 +29,9 @@ for (let i=0; i<64; i++){
     console.log = (elementoCorrente);
 
     elementoCorrente.addEventListener('click', function(){
-        console.log(this)
         this.classList.toggle('attiva');
     })
 
 
-    griglia.append(creazioneQuadrato())
+    griglia.append(elementoCorrente)
 }
