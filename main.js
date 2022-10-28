@@ -16,6 +16,16 @@
 const griglia = document.getElementById('griglia');
 console.log(griglia);
 
+const btn = document.getElementById('btn');
+btn.addEventListener('click', play)
+
+function play(){
+
+    griglia.style.display = "block";
+}
+console.log(play);
+
+
 function creazioneQuadrato(){
     const div = document.createElement('div');
     div.classList.add('quadrato');

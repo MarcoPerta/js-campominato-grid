@@ -3,7 +3,7 @@
 }
 
 .quadrato{
-    width: calc(100%/8);
+    width: calc(100%/10);
     aspect-ratio: 1/1;
     border: 1px solid black;;
 }
