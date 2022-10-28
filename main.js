@@ -33,7 +33,7 @@ function creazioneQuadrato(){
 }
 console.log(creazioneQuadrato())
 
-for (let i=0; i<64; i++){
+for (let i=0; i<100; i++){
 
     let elementoCorrente = creazioneQuadrato();
     console.log = (elementoCorrente);
