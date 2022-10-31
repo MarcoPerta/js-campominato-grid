@@ -12,6 +12,7 @@
 // -creazione div quadrato con funzione che andrà dentro griglia
 // -stilizzazione CSS quadrato, flexato padre contenitore
 // -ciclo for per creare tot quadrati e click col this
+// -funzione per far comparire i quadrati al click del btn
 
 const griglia = document.getElementById('griglia');
 console.log(griglia);
@@ -21,21 +22,25 @@ btn.addEventListener('click', play)
 
 function play(){
 
-    griglia.style.display = "block";
+    griglia.classList.remove('d-none');
+    griglia.classList.add('d-block');
+    
 }
 console.log(play);
 
 
 function creazioneQuadrato(){
+
     const div = document.createElement('div');
     div.classList.add('quadrato');
     return div;
+
 }
 console.log(creazioneQuadrato())
 
 for (let i=0; i<100; i++){
 
-    let elementoCorrente = creazioneQuadrato();
+    var elementoCorrente = creazioneQuadrato();
     console.log = (elementoCorrente);
 
     elementoCorrente.addEventListener('click', function(){
