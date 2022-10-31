@@ -13,8 +13,9 @@
 // -stilizzazione CSS quadrato, flexato padre contenitore
 // -ciclo for per creare tot quadrati e click col this
 // -inserire numeri all'interno dei quadrati nel ciclo for
-// -stilizzare numeri all'interno del quadrato
+// -stilizzare numeri all'interno del quadrato (ANCORA DA CENTRARE)
 // -funzione per far comparire i quadrati al click del btn
+
 
 
 const griglia = document.getElementById('griglia');
@@ -47,6 +48,7 @@ for (let i=0; i<100; i++){
 
     elementoCorrente.addEventListener('click', function(){
         this.classList.toggle('attiva');
+        console.log(`${i}`)
     })
 
     let numeri = document.createElement("span");
