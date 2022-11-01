@@ -33,7 +33,10 @@ function play(){
     console.log(select);
     let opzioni = select.options[select.selectedIndex].value;
     switch(opzioni){
-        case'1' :
+        case '1' :
+
+        //   div.classList.remove('elementoCorrenteM');
+        //   div.classList.remove('elementoCorrenteH');
         
           function creazioneQuadrato(){
 
@@ -46,7 +49,7 @@ function play(){
     
           for (let i=0; i<100; i++){
     
-              let elementoCorrente = creazioneQuadrato();
+              var elementoCorrente = creazioneQuadrato();
         
     
               elementoCorrente.addEventListener('click', function(){
@@ -60,9 +63,11 @@ function play(){
               griglia.append(elementoCorrente);
               elementoCorrente.append(numeri);
           }
-          break;
+          break ;
 
         case '2' : 
+        //   div.classList.remove('elementoCorrente');
+        //   div.classList.remove('elementoCorrenteH');
 
           function creazioneQuadratoM(){
 
@@ -75,7 +80,7 @@ function play(){
     
           for (let i=0; i<81; i++){
     
-              let elementoCorrenteM = creazioneQuadratoM();
+              var elementoCorrenteM = creazioneQuadratoM();
         
     
               elementoCorrenteM.addEventListener('click', function(){
@@ -92,6 +97,10 @@ function play(){
           break;
 
         case'3' : 
+
+        //   div.classList.remove('elementoCorrente');
+        //   div.classList.remove('elementoCorrenteM');
+
           function creazioneQuadratoH(){
 
               const div = document.createElement('div');
@@ -103,7 +112,7 @@ function play(){
     
           for (let i=0; i<49; i++){
     
-              let elementoCorrenteH = creazioneQuadratoH();
+              var elementoCorrenteH = creazioneQuadratoH();
         
     
               elementoCorrenteH.addEventListener('click', function(){
@@ -118,6 +127,7 @@ function play(){
               elementoCorrenteH.append(numeri);
           }
 
+          break ;
         }
     
 }
