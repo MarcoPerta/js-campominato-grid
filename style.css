@@ -3,24 +3,44 @@ body{
     width: 100vw;
 }
 
+header{
+    height: 15%;
+}
+
+main{
+    height: 85%;
+}
+
+#griglia{
+    height: 100%;
+}
+
 .bg-azure{
    background-color: #7FFFD4; 
 }
 
+span{
+    vertical-align: middle;
+}
+
 .quadrato{
     width: calc(100%/10);
+    height: calc(100%/10);
     aspect-ratio: 1/1;
-    border: 1px solid black;;
+    border: 1px solid black;
+    align-items: center;
 }
 
 .quadratoM{
     width: calc(100%/9);
+    height: calc(100%/9);
     aspect-ratio: 1/1;
     border: 1px solid black;
 }
 
 .quadratoH{
     width: calc(100%/7);
+    height: calc(100%/7);
     aspect-ratio: 1/1;
     border: 1px solid black;
 }

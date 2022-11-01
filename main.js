@@ -35,8 +35,8 @@ function play(){
     switch(opzioni){
         case '1' :
 
-        //   div.classList.remove('elementoCorrenteM');
-        //   div.classList.remove('elementoCorrenteH');
+        //   div.classList.remove('quadratoM');
+        //   div.classList.remove('quadratoH');
         
           function creazioneQuadrato(){
 
@@ -54,7 +54,7 @@ function play(){
     
               elementoCorrente.addEventListener('click', function(){
                   this.classList.toggle('attiva');
-                  console.log(`${i}`)
+                  console.log(`${i+1}`)
               })
     
               let numeri = document.createElement("span");
@@ -66,8 +66,8 @@ function play(){
           break ;
 
         case '2' : 
-        //   div.classList.remove('elementoCorrente');
-        //   div.classList.remove('elementoCorrenteH');
+        //   div.classList.remove('quadrato');
+        //   div.classList.remove('quadratoH');
 
           function creazioneQuadratoM(){
 
@@ -85,7 +85,7 @@ function play(){
     
               elementoCorrenteM.addEventListener('click', function(){
                   this.classList.toggle('attiva');
-                  console.log(`${i}`)
+                  console.log(`${i+1}`)
               })
     
               let numeri = document.createElement("span");
@@ -98,8 +98,8 @@ function play(){
 
         case'3' : 
 
-        //   div.classList.remove('elementoCorrente');
-        //   div.classList.remove('elementoCorrenteM');
+        //   div.classList.remove('quadrato');
+        //   div.classList.remove('quadratoM');
 
           function creazioneQuadratoH(){
 
@@ -117,7 +117,7 @@ function play(){
     
               elementoCorrenteH.addEventListener('click', function(){
                   this.classList.toggle('attiva');
-                  console.log(`${i}`)
+                  console.log(`${i+1}`)
               })
     
               let numeri = document.createElement("span");
