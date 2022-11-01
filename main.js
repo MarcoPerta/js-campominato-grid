@@ -28,36 +28,188 @@ function play(){
 
     griglia.classList.remove('d-none');
     griglia.classList.add('d-block');
-    
-}
 
-
-function creazioneQuadrato(){
-
-    const div = document.createElement('div');
-    div.classList.add('quadrato');
-    return div;
-
-}
-console.log(creazioneQuadrato())
-
-for (let i=0; i<100; i++){
-
-    let elementoCorrente = creazioneQuadrato();
-    
-
-    elementoCorrente.addEventListener('click', function(){
-        this.classList.toggle('attiva');
-        console.log(`${i}`)
-    })
-
-    let numeri = document.createElement("span");
-    numeri.innerText = `${i+1}`;
-    numeri.classList.add('align-middle');
-
+    let select = document.getElementById('values');
+    console.log(select);
+    let opzioni = select.options[select.selectedIndex].value;
+    switch(opzioni){
+        case'1' :
         
-    griglia.append(elementoCorrente);
-    elementoCorrente.append(numeri);
+          function creazioneQuadrato(){
+
+              const div = document.createElement('div');
+              div.classList.add('quadrato');
+              return div;
+    
+          }
+          console.log(creazioneQuadrato())
+    
+          for (let i=0; i<100; i++){
+    
+              let elementoCorrente = creazioneQuadrato();
+        
+    
+              elementoCorrente.addEventListener('click', function(){
+                  this.classList.toggle('attiva');
+                  console.log(`${i}`)
+              })
+    
+              let numeri = document.createElement("span");
+              numeri.innerText = `${i+1}`;
+    
+              griglia.append(elementoCorrente);
+              elementoCorrente.append(numeri);
+          }
+          break;
+
+        case '2' : 
+
+          function creazioneQuadratoM(){
+
+              const div = document.createElement('div');
+              div.classList.add('quadratoM');
+              return div;
+    
+          }
+          console.log(creazioneQuadratoM())
+    
+          for (let i=0; i<81; i++){
+    
+              let elementoCorrenteM = creazioneQuadratoM();
+        
+    
+              elementoCorrenteM.addEventListener('click', function(){
+                  this.classList.toggle('attiva');
+                  console.log(`${i}`)
+              })
+    
+              let numeri = document.createElement("span");
+              numeri.innerText = `${i+1}`;
+    
+              griglia.append(elementoCorrenteM);
+              elementoCorrenteM.append(numeri);
+          }
+          break;
+
+        case'3' : 
+          function creazioneQuadratoH(){
+
+              const div = document.createElement('div');
+              div.classList.add('quadratoH');
+              return div;
+    
+          }
+          console.log(creazioneQuadratoH())
+    
+          for (let i=0; i<49; i++){
+    
+              let elementoCorrenteH = creazioneQuadratoH();
+        
+    
+              elementoCorrenteH.addEventListener('click', function(){
+                  this.classList.toggle('attiva');
+                  console.log(`${i}`)
+              })
+    
+              let numeri = document.createElement("span");
+              numeri.innerText = `${i+1}`;
+    
+              griglia.append(elementoCorrenteH);
+              elementoCorrenteH.append(numeri);
+          }
+
+        }
+    
 }
+
+// function creazioneQuadrato(){
+
+//     const div = document.createElement('div');
+//     div.classList.add('quadrato');
+//     return div;
+    
+// }
+// console.log(creazioneQuadrato())
+    
+// for (let i=0; i<100; i++){
+    
+//     let elementoCorrente = creazioneQuadrato();
+        
+    
+//     elementoCorrente.addEventListener('click', function(){
+//         this.classList.toggle('attiva');
+//         console.log(`${i}`)
+//     })
+    
+//     let numeri = document.createElement("span");
+//     numeri.innerText = `${i+1}`;
+    
+//     griglia.append(elementoCorrente);
+//     elementoCorrente.append(numeri);
+// }
+
+
+
+// function creazioneQuadratoM(){
+
+//     const div = document.createElement('div');
+//     div.classList.add('quadratoM');
+//     return div;
+    
+// }
+// console.log(creazioneQuadratoM())
+    
+// for (let i=0; i<100; i++){
+    
+//     let elementoCorrenteM = creazioneQuadratoM();
+        
+    
+//     elementoCorrenteM.addEventListener('click', function(){
+//         this.classList.toggle('attiva');
+//         console.log(`${i}`)
+//     })
+    
+//     let numeri = document.createElement("span");
+//     numeri.innerText = `${i+1}`;
+    
+//     griglia.append(elementoCorrenteM);
+//     elementoCorrenteM.append(numeri);
+// }
+
+
+
+
+// function creazioneQuadratoH(){
+
+//     const div = document.createElement('div');
+//     div.classList.add('quadratoH');
+//     return div;
+    
+// }
+// console.log(creazioneQuadratoH())
+    
+// for (let i=0; i<100; i++){
+    
+//     let elementoCorrenteH = creazioneQuadratoH();
+        
+    
+//     elementoCorrenteH.addEventListener('click', function(){
+//         this.classList.toggle('attiva');
+//         console.log(`${i}`)
+//     })
+    
+//     let numeri = document.createElement("span");
+//     numeri.innerText = `${i+1}`;
+    
+//     griglia.append(elementoCorrenteH);
+//     elementoCorrenteH.append(numeri);
+// }
+
+
+
+
+
+
+
 
 
