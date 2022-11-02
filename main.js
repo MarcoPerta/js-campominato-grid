@@ -28,6 +28,7 @@ function play(){
 
     griglia.classList.remove('d-none');
     griglia.classList.add('d-block');
+    griglia.innerHTML = "";
 
     let select = document.getElementById('values');
     console.log(select);
@@ -35,9 +36,6 @@ function play(){
     switch(opzioni){
         case '1' :
 
-        //   div.classList.remove('quadratoM');
-        //   div.classList.remove('quadratoH');
-        
           function creazioneQuadrato(){
 
               const div = document.createElement('div');
@@ -77,6 +75,7 @@ function play(){
     
           }
           console.log(creazioneQuadratoM())
+          
     
           for (let i=0; i<81; i++){
     

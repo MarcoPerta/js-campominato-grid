@@ -26,7 +26,6 @@ span{
 .quadrato{
     width: calc(100%/10);
     height: calc(100%/10);
-    aspect-ratio: 1/1;
     border: 1px solid black;
     align-items: center;
 }
@@ -34,14 +33,12 @@ span{
 .quadratoM{
     width: calc(100%/9);
     height: calc(100%/9);
-    aspect-ratio: 1/1;
     border: 1px solid black;
 }
 
 .quadratoH{
     width: calc(100%/7);
     height: calc(100%/7);
-    aspect-ratio: 1/1;
     border: 1px solid black;
 }
 
